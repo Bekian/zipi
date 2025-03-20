@@ -4,6 +4,7 @@ const http_server = @import("server.zig");
 const router = @import("router.zig");
 const handler = @import("handler.zig");
 const config = @import("config.zig");
+const httpz = @import("httpz");
 
 pub fn main() !void {
     var gpa = std.heap.GeneralPurposeAllocator(.{}){};
